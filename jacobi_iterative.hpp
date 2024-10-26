@@ -1,5 +1,4 @@
 /*Zunaied Nudar*/
-/*Arpita Das*/
 #include <bits/stdc++.h>
 #include "equation_types.hpp"
 using namespace std;
@@ -9,7 +8,6 @@ public:
     JacobiIterative(int unknowns, const vector<vector<double>>& coefficients, double error) : Linear(unknowns, coefficients, error) {}
     void calculate() override {
         int n = this->unknowns;
-        /*Arpita Das*/
         for(int i=0;i<n;i++)
         {
             for(int j=i+1;j<n;j++)
@@ -24,7 +22,6 @@ public:
                 }
             }
         }
-        /*Arpita Das*/
         vector<double> xp(n, 0.0);
         vector<double> xn(n);
         vector<double> ex(n);
@@ -48,4 +45,3 @@ public:
     }
 };
 /*Zunaied Nudar*/
-/*Arpita Das*/
